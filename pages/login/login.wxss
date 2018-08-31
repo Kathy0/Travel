@@ -1,0 +1,39 @@
+/* pages/login/login.wxss */
+page{
+  height: 100%;
+  overflow-y:hidden;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+image{
+  height: 100%;
+  width: 100%;
+}
+.formGroup{
+  position: absolute;
+  top:50%;
+}
+input{
+  background-color: #fff;
+  width: 400rpx;
+  font-size: 14px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+button{
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  width: 45%;
+  color: #fff;
+  background-color: #87c6ff;
+  font-size: 14px;
+}
+.btnGroup{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

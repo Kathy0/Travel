@@ -1,0 +1,17 @@
+<!--pages/article02/article02.wxml-->
+<view class='container'>
+  <view class='articleCon'>
+    <image src = '{{article.imgUrl}}' class='articleImg' mode='widthFix'></image>
+    <text class='title'>{{article.title}}</text>
+    <text class='content' decode='true'>{{article.content}}</text>
+  </view>
+  <view class='card'>
+    <text class='likeHead'>猜你喜欢</text>
+    <scroll-view scroll-x = 'true'  class='likeCon' scroll-left="200">
+      <view wx:for = '{{likeList}}' wx:key = 'index' class='likeItem'>
+        <image src = '{{item.imgUrl}}' class='likeImg'></image>
+        <view class='likeTitle'>{{item.title}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

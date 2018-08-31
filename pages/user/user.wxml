@@ -1,0 +1,27 @@
+<!--pages/users/users.wxml-->
+<view class='container'>
+  <view class='portraitCon'>
+    <image src = '../images/user/bg1.png' mode="widthFix" class='portraitBg'></image>
+    <view class='portraitGroup'>
+      <image src = '{{avatarUrl}}' class='portrait'></image>
+      <view class='username'>{{nickname}}</view>
+      <button wx:if="{{show}}" class='getUserBtn' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">点击获取头像昵称</button>
+    </view>
+  </view>
+  <view class='settingCon'>
+    <view class = 'settingItem'>
+      {{weather}}
+      <switch color='#87c6ff' bindchange='switchChange'></switch>
+    </view>
+    <view class = 'settingItem'>
+      撰写攻略
+      <navigator url='../blog/blog'>
+        <image src="../images/arrow.png" mode="aspectFit"></image>
+      </navigator>
+    </view>
+    <view class = 'settingItem'>
+      更多信息
+      <icon type='info' size="20" color='#87c6ff'></icon>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class='container'>
+  <image src='{{bgUrl}}'></image>
+  <view class='formGroup'>
+    <form bindsubmit='submitForm'>
+      <input bindblur="getName" name="username" placeholder='请输入用户名'></input>
+      <input bindblur="getPwd" name="password" placeholder='请输入密码' type='password'></input>
+      <view class='btnGroup'>
+        <button form-type='reset' bindtap='setInfo'>注册</button>
+        <button form-type='submit'>登录</button>
+      </view>
+    </form>
+  </view>
+</view>

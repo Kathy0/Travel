@@ -1,0 +1,30 @@
+<!--pages/blog/blog.wxml-->
+<view class = 'container'>
+  <form bindsubmit="formSubmit" wx:if="{{show}}">
+    <view class = 'editCon'>
+      <textarea name = 'blog' placeholder='分享你的旅游心情'></textarea>
+      <image src = '{{picUrl}}' class='pic' bindtap='previewImg' wx:if="{{upImg}}"></image>
+      <image src='../images/add.png' class='pic' bindtap='addImg'></image>
+    </view>
+    <view class = 'settingItem'>
+      <view class='v-align'>
+        <image src='../images/location.png'></image>
+        {{location}}
+      </view>
+      <image src="../images/arrow.png" mode="aspectFit" bindtap='getLocation'></image>
+    </view>
+    <view class='alignRt'>
+      <button size='mini' form-type='submit'>发表</button>
+    </view>
+  </form>
+  <view class='logCon' wx:if="{{!show}}">
+    <view class='logTime'>{{month}}月{{date}}日</view>
+    <view class='content'>
+      <view class="c-align">
+        <image class="logImg" src='{{picUrl}}' mode="widthFix" bindlongpress="saveImg"></image>
+      </view>
+      <view class='logTxt'>{{blog}}</view>
+      <view class='logLoc'>{{location}}</view>
+    </view>
+  </view>
+</view> 

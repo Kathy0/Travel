@@ -1,0 +1,70 @@
+/**app.wxss**/
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #f6f7f8;
+} 
+/*  轮播图  */
+swiper{
+  width: 100%;
+}
+swiper-item image{
+  width: 100%;
+}
+/*  文章页  */
+.articleCon{
+  background-color: #fff;
+}
+.articleCon .title{
+  display: block;
+  text-align: center;
+  margin: 30rpx;
+  padding: 10px;
+  border-bottom: 3px solid #87c6ff;
+  color: #87c6ff;
+}
+.articleImg{
+  width: 100%;
+}
+.articleCon .content{
+  display: block;
+  padding: 20rpx 50rpx;
+  font-size: 14px;
+  text-align: justify;
+  color: #666;
+  line-height: 1.8;
+}
+/*  猜你喜欢  */
+.card{
+  background: #fff;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+.likeCon{
+  width: 100%; 
+  height: 130px;
+  white-space: nowrap; /*注意*/
+  margin-top: 10px;
+ 
+}
+.likeItem{
+   display: inline-block; /*注意*/
+   width: 184px; 
+   text-align: center;
+}
+.likeImg{
+  width: 174px;
+  height: 100px;
+  margin-right:5px;
+}
+.likeTitle{
+  text-align: center;
+  font-size: 12px;
+  color: #96bfe3;
+}
+.likeHead{
+    text-align: center;
+    color: #96bfe3;
+    font-size: 14px;
+    padding-left: 5px;
+}

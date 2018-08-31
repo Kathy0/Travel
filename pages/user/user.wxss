@@ -1,0 +1,49 @@
+/* pages/user/user.wxss */
+.portraitBg {
+  width: 100%;
+}
+.portrait {
+  height: 64px;
+  width: 64px;
+  position: absolute;
+  top: 40px;
+  border-radius: 50%;
+  margin-bottom: 5px;
+}
+.portraitGroup {
+  display: flex;
+  justify-content: center;
+}
+.username{
+  position: absolute;
+  top:110px;
+  color: #73A8F8;
+}
+.getUserBtn{
+  position: absolute;
+  top:110px;
+}
+.settingCon{
+  margin-top: 10px;
+}
+.settingItem{
+  padding: 10px;
+  font-size: 14px;
+  color: #605e60;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.settingItem image {
+  height: 24px;
+  width: 24px;
+}
+.v-align{
+  display: flex;
+  align-items: center;
+}
+icon{
+  margin-right: 5px;
+}  

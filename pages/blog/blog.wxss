@@ -1,0 +1,95 @@
+/* pages/blog/blog.wxss */
+.editCon{
+  padding: 20px;
+}
+.pic{
+  height: 78px;
+  width: 78px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+textarea{
+  width: 100%;
+  font-size: 14px;
+  color: #666;
+  margin-bottom:10px;
+  height:120px;
+}
+.settingItem{
+  padding: 10px;
+  font-size: 14px;
+  color: #605e60;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.settingItem image {
+  height: 24px;
+  width: 24px;
+}
+.v-align{
+  display: flex;
+  align-items: center;
+}
+icon{
+  margin-right: 5px;
+} 
+.navBar{
+  width: 750rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: #87c6ff;
+}
+.navBar view{
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 14px;
+  color: #fff;
+}
+.alignRt{
+  text-align: right;
+}
+button{
+  background-color: #87c6ff;
+  color: #fff;
+  margin-right: 20px;
+}
+/*  日志部分  */
+.logCon{
+  font-size: 14px;
+  color: #605e60;
+  background-color: #fff;
+  padding: 10px; 
+  display: flex;
+  align-items: flex-start;
+}
+.logImg{
+  border: 1px solid #ccc;
+  margin: 3px 0;
+}
+.logLoc{
+  border-top:1px solid #ccc;
+  color: #ccc;
+  padding-top: 5px;
+  margin-top:5px;
+}
+.logTime{
+  height: 100%;
+  display: inline-block;
+  width: 18%;
+}
+.logTxt{
+  word-wrap: break-word;
+}
+.content{
+  display: inline-block;
+  width: 82%;
+}
+.c-align{
+  display: flex;
+  justify-content: center;
+}
